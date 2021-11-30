@@ -4,107 +4,7 @@
 <head>
     <meta charset="utf-8" content="text/html">
     <title>HTML Task</title>
-    <style type="text/css">
-        main {
-            width: 55%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        h1.author {
-            font-family: sans-serif;
-            font-size: medium;
-            margin-left: 3%;
-        }
-
-        h1.content {
-            font-family: DollhouseC, serif;
-            font-size: 50px;
-            margin-left: 35%;
-            margin-bottom: 0;
-        }
-
-        h2.about-author {
-            font-family: "Domkrat DP Normal", serif;
-            font-size: xx-large;
-            margin-left: 3%;
-        }
-
-        h2.chapter-subheadings {
-            margin-top: 0;
-            font-family: "Arial Black", serif;
-        }
-
-        table.maket {
-            width: 100%;
-            -webkit-border-horizontal-spacing: 40px;
-        }
-
-        img {
-            height: 70%;
-            width: 70%;
-        }
-
-        TD {
-            vertical-align: top;
-            text-align: justify;
-            width: 50px;
-        }
-
-        nav {
-            text-align: left;
-            width: 30%;
-            margin-right: auto;
-            margin-left: 45%;
-        }
-
-        ol {
-            padding-left: 5%;
-        }
-
-        ul {
-            padding-left: 5%;
-            list-style-type: none;
-        }
-
-        li {
-            margin-bottom: 1em;
-        }
-
-        li.li-navigable {
-            padding-left: 30px;
-            margin-left: 25px;
-        }
-
-        #first-nav-non-num {
-            padding-left: 55px;
-            list-style-type: none;
-        }
-
-        #last-nav-non-num {
-            padding-left: 0;
-            list-style-type: none;
-            margin-left: 0;
-        }
-
-        span.number-of-page {
-            float: right;
-        }
-
-        article {
-            font-family: Arial, serif;
-            font-size: medium;
-            text-align: justify;
-            margin-left: 38%;
-            width: 38%;
-        }
-
-        footer {
-            color: gray;
-            float: right;
-            margin-right: 20%;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <main>
@@ -115,41 +15,43 @@
         Об авторах
     </h2>
     <table class="maket">
-        <td>
-            <a href="Elisabeth.gif" target="_blank">
-                <img src="Elisabeth.gif" alt="Elisabeth photo">
-            </a>
-        </td>
-        <td>
-            <a href="Eric.gif" target="_blank">
-                <img src="Eric.gif" alt="Eric photo">
-            </a>
-        </td>
-    </table>
-    <table class="maket">
-        <td>
-            <strong>
-                Элизабет
-            </strong>
-            - автор и разработчик программного обеспечения. Она с самого детства имеет
-            дело с
-            Интернетом. Элизабет - соучредитель The Ada Project (TAP), сайта для женщин, который посвящен работе
-            с
-            компьютером и ныне принят ACM (Ассоциацией по вычислительной технике). Кроме того, Элизабет
-            возглавляет
-            работы по исследованию и развитию цифровых носителей.
-        </td>
-        <td>
-            <strong>
-                Эрик
-            </strong>
-            - исследователь в области компьютеров, страстно увлекающийся работой с
-            информацией
-            медиатипа и архитектурой систем программного обеспечения. В течении последних четырех лет он
-            занимался
-            реализацией своей мечты, управляя разработкой широкополосного Интернета и беспроводного доступа в
-            Disney.
-        </td>
+        <tr>
+            <td>
+                <a href="Elisabeth.gif" target="_blank">
+                    <img alt="Elisabeth photo" src="Elisabeth.gif">
+                </a>
+            </td>
+            <td>
+                <a href="Eric.gif" target="_blank">
+                    <img alt="Eric photo" src="Eric.gif">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>
+                    Элизабет
+                </strong>
+                - автор и разработчик программного обеспечения. Она с самого детства имеет
+                дело с
+                Интернетом. Элизабет - соучредитель The Ada Project (TAP), сайта для женщин, который посвящен работе
+                с
+                компьютером и ныне принят ACM (Ассоциацией по вычислительной технике). Кроме того, Элизабет
+                возглавляет
+                работы по исследованию и развитию цифровых носителей.
+            </td>
+            <td>
+                <strong>
+                    Эрик
+                </strong>
+                - исследователь в области компьютеров, страстно увлекающийся работой с
+                информацией
+                медиатипа и архитектурой систем программного обеспечения. В течении последних четырех лет он
+                занимался
+                реализацией своей мечты, управляя разработкой широкополосного Интернета и беспроводного доступа в
+                Disney.
+            </td>
+        </tr>
     </table>
 </main>
 <br>
@@ -158,53 +60,53 @@
     Содержание (сводка)
 </h1>
 <nav>
-    <ol>
-        <li id="first-nav-non-num">
+    <ol class="content-block">
+        <li>
             Введение
             <span class="number-of-page">23</span>
-        <li class="li-navigable" value="1">
+        <li value="1">
             Язык Сети: <i>знакомство с HTML</i>
             <span class="number-of-page">35</span>
-        <li class="li-navigable">
+        <li>
             Знакомство с гипертекстом: <br><i>идем дальше - используем гипертекст</i>
             <span class="number-of-page">75</span>
-        <li class="li-navigable">
+        <li>
             Конструирование веб-страниц: <i>строительные блоки</i>
             <span class="number-of-page">107</span>
-        <li class="li-navigable">
+        <li>
             Путешествие в Webville: <i>соединение</i>
             <span class="number-of-page">151</span>
-        <li class="li-navigable">
+        <li>
             Знакомство с медиа: <i>добавление изображений на страницы</i>
             <span class="number-of-page">189</span>
-        <li class="li-navigable">
+        <li>
             Серьезный HTML: <i>соответствие стандартам</i>
             <span class="number-of-page">245</span>
-        <li class="li-navigable">
+        <li>
             Добавление X к HTML: <i>переходим к XHTML</i>
             <span class="number-of-page">285</span>
-        <li class="li-navigable">
+        <li>
             Начнем работать над дизайном: <i>приступаем к работе с CSS</i>
             <span class="number-of-page">303</span>
-        <li class="li-navigable">
+        <li>
             Увеличиваем словарный запас: <i>меняем шрифты и цвета</i>
             <span class="number-of-page">357</span>
-        <li class="li-navigable">
+        <li>
             Познакомимся с элементами поближе: <i>блочная модель</i>
             <span class="number-of-page">399</span>
-        <li class="li-navigable">
+        <li>
             Современная веб-конструкция: <i>элементы div и span</i>
             <span class="number-of-page">441</span>
-        <li class="li-navigable">
+        <li>
             Расставим элементы по местам: <br><i>разметка и позиционирование</i>
             <span class="number-of-page">499</span>
-        <li class="li-navigable">
+        <li>
             Представление в табличной форме: <br><i>таблицы и большие списки</i>
             <span class="number-of-page">557</span>
-        <li class="li-navigable">
+        <li>
             Переход на интерактивный режим: <i>XHTML-формы</i>
             <span class="number-of-page">597</span>
-        <li id="last-nav-non-num">
+        <li>
             Приложение. Топ-10 тем, которые не были освещены в этой книге
             <span class="number-of-page">643</span>
         </li>
@@ -230,7 +132,7 @@
     </p>
 </article>
 <nav>
-    <ul>
+    <ul class="content-block">
         <li>
             Для кого написана эта книга?
             <span class="number-of-page">24</span>
