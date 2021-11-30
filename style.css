@@ -56,7 +56,7 @@ ol.content-block li {
 }
 
 ol.content-block li:first-child {
-    padding-left: 55px;
+    padding-left: 30px;
     list-style-type: none;
 }
 
